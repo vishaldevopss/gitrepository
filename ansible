@@ -1,0 +1,9 @@
+--- 
+- hosts: all 
+  user: vishal
+  become: yes 
+  connection: ssh
+  tasks: 
+  - name: Installing the git software on the linux
+    yum: name=git state=present
+

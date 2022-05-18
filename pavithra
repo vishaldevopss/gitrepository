@@ -5,4 +5,4 @@
   connection: ssh
   tasks: 
   - name: Installing git package on linux
-    Yum: name=git state=present
+    Yum: name=git state=installed
